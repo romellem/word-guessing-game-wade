@@ -1,6 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-const got = require('got');
+const fetch = require('node-fetch');
 
 const app = express();
 app.use(morgan('combined'));
@@ -13,8 +13,8 @@ app.get('/api/:phrase', (req, res) => {
 		return res.json([]);
 	}
 
-	got(`https://relatedwords.org/api/related?term=${phrase}`)
-		.json()
+	fetch(`https://relatedwords.org/api/related?term=${phrase}`)
+		.then((b) => b.json())
 		.then((body) => {
 			if (body.error) {
 				return res.status(500);
