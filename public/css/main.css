@@ -1,5 +1,6 @@
 html {
     font-family: sans-serif;
+    line-height: 1.5;
 
     /* https://coolors.co/fffcf2-ccc5b9-403d39-252422-eb5e28 */
     color: #252422;
@@ -12,9 +13,13 @@ body {
 }
 button,
 label,
-input[type="checkbox"] {
+input[type='checkbox'] {
     cursor: pointer;
 }
+input[type='text'] {
+    padding: 0.5em;
+}
+
 .button-reset {
     font: inherit;
     line-height: normal;
@@ -50,6 +55,8 @@ input[type="checkbox"] {
     position: relative;
 
     font-size: 0.75em;
+    padding: 2px;
+    text-align: center;
 
     hyphens: auto;
 }
@@ -75,8 +82,6 @@ input[type="checkbox"] {
         padding-bottom: 60%;
     }
 }
-
-
 
 .cards--show-secret .card--selected {
     background: #403d39;
@@ -104,7 +109,30 @@ input[type="checkbox"] {
     border-radius: 100px;
     color: #fffcf2;
     background: #eb5e28;
-    box-shadow: 5px 5px 5px #ccc5b9;
+    border: none;
+    box-shadow: 2px 2px 4px #ccc5b9;
+}
+
+.secondary-button {
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    color: #fffcf2;
+    background: #403d39;
+    border: none;
+    box-shadow: 2px 2px 4px #ece9e0;
+}
+
+.ternary-button {
+    padding: 0.25em 0.5em;
+    border-radius: 100px;
+    color: #252422;
+    background: #ccc5b9;
+    border: none;
+    box-shadow: 2px 2px 4px #ece9e0;
+}
+
+.base button:active {
+    box-shadow: none;
 }
 
 .start,
