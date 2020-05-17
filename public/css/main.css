@@ -101,10 +101,6 @@ input[type='text'] {
     line-height: 10px;
 }
 
-.card__remove:hover {
-    background: #fdecde;
-}
-
 .primary-button {
     padding: 0.5em 1em;
     border-radius: 100px;
