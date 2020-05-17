@@ -58,6 +58,7 @@ input[type='text'] {
     padding: 2px;
     text-align: center;
 
+    -webkit-hyphens: auto;
     hyphens: auto;
 }
 
