@@ -7,7 +7,7 @@ html {
     background: #fffcf2;
 }
 body {
-    margin: 1em auto;
+    margin: 1em auto 3em auto;
     padding: 0 1em;
     max-width: 50em;
 }
