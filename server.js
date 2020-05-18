@@ -1,9 +1,11 @@
 const express = require('express');
 const morgan = require('morgan');
+const compression = require('compression');
 const fetch = require('node-fetch');
 
 const app = express();
 app.use(morgan('combined'));
+app.use(compression());
 app.use(express.static('public'));
 
 app.get('/api/:phrase', (req, res) => {
