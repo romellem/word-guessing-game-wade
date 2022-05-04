@@ -1,8 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
     font-family: sans-serif;
     line-height: 1.5;
 
-    /* https://coolors.co/fffcf2-ccc5b9-403d39-252422-eb5e28 */
+    /* https://coolors.co/fffcf2-ccc5b9-6c6760-403d39-252422-eb5e28 */
     color: #252422;
     background: #fffcf2;
 }
@@ -18,6 +24,19 @@ input[type='checkbox'] {
 }
 input[type='text'] {
     padding: 0.5em;
+}
+
+details {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+details ul {
+    margin-top: 0;
+}
+
+details summary {
+    color: #6c6760;
 }
 
 .button-reset {
