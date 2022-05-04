@@ -12,21 +12,7 @@
     </head>
     <body class="base">
         <h1>Word Guessing Game</h1>
-        <p>
-            Enter a <em>category</em> to find related words. Can’t think of one?
-            <button class="ternary-button" id="suggest-a-category">Get a suggesstion</button>
-        </p>
-        <div>
-            <label>
-                Category:<br />
-                <input id="category" type="text" />
-            </label>
-            <button class="secondary-button button-reset" id="category-submit">
-                Find Related Words
-            </button>
-        </div>
-
-        <details>
+         <details>
             <summary>Instructions:</summary>
             <ul>
                 <li>
@@ -70,6 +56,19 @@
                 <li>The Guesser then tries to guess what the secret word is!</li>
             </ul>
         </details>
+        <p>
+            Enter a <em>category</em> to find related words. Can’t think of one?
+            <button class="ternary-button" id="suggest-a-category">Get a suggesstion</button>
+        </p>
+        <div>
+            <label>
+                Category:<br />
+                <input id="category" type="text" />
+            </label>
+            <button class="secondary-button button-reset" id="category-submit">
+                Find Related Words
+            </button>
+        </div>
 
         <div class="cards"></div>
         <div class="start">
