@@ -1,12 +1,11 @@
 {
   "name": "word-guessing-game-wade",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "A simple word guessing game",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "keywords": [],
   "author": "romellem",
   "license": "MIT",
   "engines": {
